@@ -2,6 +2,12 @@
 
 Interface de classification de déchets basée sur la vision par ordinateur, conçue pour identifier automatiquement la catégorie d'un déchet à partir d'une photographie et fournir des instructions de tri adaptées.
 
+**Application deployee :** [wastescan.streamlit.app](https://wastescan.streamlit.app)
+
+---
+
+![Apercu de l'application WasteScan](img1.png)
+
 ---
 
 ## Le problème
