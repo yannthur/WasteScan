@@ -130,7 +130,7 @@ def load_model(model_path, model_config):
         model = models.shufflenet_v2_x1_0(weights=None)
         model.fc = create_head(model.fc.in_features, hidden_units, dropout, num_classes)
 
-    state_dict = torch.load(model_path, map_location=device)
+    state_dict = torch.load(model_path, map_location=device, weights_only=False)
     if any(k.startswith("_orig_mod.") for k in state_dict.keys()):
         state_dict = {k.replace("_orig_mod.", ""): v for k, v in state_dict.items()}
     model.load_state_dict(state_dict)
