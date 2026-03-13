@@ -2,5 +2,5 @@ numpy
 Pillow
 plotly
 streamlit
-torch
+torch == 2.9.1
 torchvision
